@@ -1,3 +1,11 @@
+:root {
+    --first-primary-color: #00698F;
+    --second-primary-color: #00A2DC;
+    --third-primary-color: #19C2FF;
+    --first-secondary-color: #8F4A00;
+    --second-secondary-color: #DB7100;
+}
+
 .bg-primary,
 .btn-primary,
 .btn-soft-primary:hover, 
@@ -34,7 +42,7 @@
 .form-check-input.form-check-input:checked,
 .qs-datepicker-container .qs-squares .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover, 
 .qs-datepicker-container .qs-squares .qs-square.qs-current {
-    background-color: #2f55d4 !important;
+    background-color: var(--first-primary-color) !important;
 }
 
 .text-primary,
