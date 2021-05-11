@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+/* global styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: #00698F !important;
+}
+
+.text-primary-light {
+  color: #00A2DC !important;
+}
+
+.text-primary-lighter {
+  color: #19C2FF !important;
+}
+
+.text-secondary {
+  color: #8F4A00 !important;
+}
+
+.text-secondary-light {
+  color: #DB7100 !important;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#topnav .nav-menu > li:hover > a, #topnav .nav-menu > li.active > a, #topnav .nav-menu > li > a:hover {
+  color: #19C2FF !important;
+}
+
+.btn-login, .btn-login:hover, .btn-login:focus, .btn-login:active, .btn-login.active, .btn-login.focus {
+  background-color: #00698F;
+  border: 1px solid #00698F;
+  color: #fff;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary.focus {
+  background-color: #8F4A00 !important;
+  border: 1px solid #8F4A00 !important;
+  color: #fff;
+}
+
+.btn-secondary-light, .btn-secondary-light:hover, .btn-secondary-light:focus, .btn-secondary-light:active, .btn-secondary-light.active, .btn-secondary-light.focus {
+  background-color: #DB7100 !important;
+  border: 1px solid #DB7100 !important;
+  color: #fff;
+}
+
+/* header styles */
+.logo {
+  padding: 5px 0;
+}
+
+.logo span, .logo a {
+  margin-left: 20px;
+}
+
+#topnav .login-button {
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  line-height: 68px;
+}
+
+/* footer styles */
+.footer .footer-list li {
+  display: table-cell;
+  position: relative;
+}
+
+.footer .footer-list li a {
+  display: inline-block;
+  position: relative;
+}
+
+.footer .footer-list li a::after {
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: -10%;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width .3s ease 0s, left .3s ease 0s;
+}
+
+.footer .footer-list li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,116 @@
+/* global styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text {
+    &-primary {
+        color: $first-primary-color !important;
+        
+        &-light {
+            color: $second-primary-color !important;
+        }
+        &-lighter {
+            color: $third-primary-color !important;
+        }
+    }
+    &-secondary {
+        color: $first-secondary-color !important;
+        
+        &-light {
+            color: $second-secondary-color !important;
+        }
+    }
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#topnav .nav-menu > li:hover > a, #topnav .nav-menu > li.active > a, #topnav .nav-menu > li > a:hover {
+    color: $third-primary-color !important;
+}
+
+.btn-login, .btn-login:hover, .btn-login:focus, .btn-login:active, .btn-login.active, .btn-login.focus {
+    background-color: $first-primary-color;
+    border: 1px solid $first-primary-color;
+    color: #fff;
+}
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary.focus {
+    background-color: $first-secondary-color !important;
+    border: 1px solid $first-secondary-color !important;
+    color: #fff;
+}
+.btn-secondary-light, .btn-secondary-light:hover, .btn-secondary-light:focus, .btn-secondary-light:active, .btn-secondary-light.active, .btn-secondary-light.focus {
+    background-color: $second-secondary-color !important;
+    border: 1px solid $second-secondary-color !important;
+    color: #fff;
+}
+
+/* header styles */
+.logo {
+    padding: 5px 0;
+    
+    span, a {
+        margin-left: 20px;
+    }
+}
+
+#topnav .login-button {
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    line-height: 68px;
+}
+
+/* footer styles */
+.footer .footer-list {
+    li {
+        display: table-cell;
+        position: relative;
+        
+        a {
+            display: inline-block;
+            position: relative;
+            
+            &::after {
+                display: block;
+                background: none repeat scroll 0 0 transparent;
+                content: "";
+                height: 2px;
+                width: 0;
+                bottom: -10%;
+                left: 50%;
+                position: absolute;
+                background: #fff;
+                transition: width .3s ease 0s, left .3s ease 0s;
+            }
+            
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+}
+
